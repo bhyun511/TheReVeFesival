@@ -1,0 +1,46 @@
+main{
+    scroll-behavior: smooth;
+}
+    
+header { 
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding: 20px 0;
+    z-index: 100;
+}
+header nav ul {
+    display:flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+header nav ul li {
+    margin: 0 40px;
+    list-style: none;
+}
+header nav ul li a {
+    color: #39C8C8;
+    text-decoration: none;
+    font-family: "Pretendard-SB";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+header nav ul li a:hover {
+    color: #38D9C4;
+    text-decoration: none;
+    font-family: "Pretendard-SB";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+header nav div a img{
+    position: absolute;
+    width: 51px;
+    height: 43px;
+    left: 80px;
+    top: 32px;
+}
