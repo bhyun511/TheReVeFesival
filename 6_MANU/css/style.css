@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family: 'Cardo', 'Volkhov', sans-serif;
+    background-color: #0F0F0F;
+    background-size: 100%;
+}
+header {padding: 10px;}
+.logo {float: left; }
+
+body ul {
+    position:relative;
+    left:50%;
+    margin-top:8%;
+    width:500px;
+    transform:translate(-50%, 0%);
+}
+body li {
+     list-style: none;
+     padding-top: 25px;
+}
+
+body  li a {
+    color: transparent;
+    font-size: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 2px #716E7F;
+    transition: all 0.5s;
+}
+
+body  li a:hover {
+    text-decoration: underline;
+    font-style: italic;
+    text-shadow: none;
+    color: #84849B;
+}
+

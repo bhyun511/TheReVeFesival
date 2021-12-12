@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family: 'Cardo', 'Volkhov', sans-serif;
+    background-color: #0F0F0F;
+    background-size: 100%;
+}
+header
+{
+    color: white;
+    padding: 10px;
+}
+.logo
+{
+    position:fixed;
+    float: left;
+}
+.clear
+{
+    clear: both; 
+    height: 0px; 
+    overflow: hidden;
+}
+.title
+{
+    position:relative;
+    left: 35%;
+    float: center;
+    margin-top:8%;
+    width:500px;
+}
+.title > h1
+{
+    text-align: center;
+    color: #84849B;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 앨범사진에 마우스를 가져다 대면 검정화면과 텍스트가 생기도록 한 CSS입니다 */
+.album {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+.album {max-width:1200px;width:100%;margin:100px 0px 0px 0px;}
+.album > ul {font-size: 0px;}
+.album > ul > li {display:inline-block;vertical-align:top;width:33.3%;}
+.album > ul > li > a {display:block;width:auto;text-decoration: none;margin:5px;}
+.album > ul > li > a .screen {position:relative;overflow:hidden;}
+.album > ul > li > a .screen .top {position:absolute;bottom:150%;left:30px;z-index:2;color:#fff;font-size:26px;font-weight:900;transition:all .35s;}
+.album > ul > li > a .screen .bottom {position:absolute;top:150%;left:30px;z-index:2;color:#fff;font-size:12px;transition:all .35s;}
+.album > ul > li > a .screen img {width:100%;}
+.album > ul > li > a h3 {font-size:14px;text-align:center;padding:20px;color:#716E7F;}
+.album > ul > li > a .screen::after {content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:1;opacity:0;transition:all .35s;}
+.album > .section3 > ul > li > a:hover .top {bottom:52%;}
+.album > ul > li > a:hover .bottom {top:52%;}
+.album > ul > li > a:hover .screen::after {opacity:1;}
